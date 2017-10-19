@@ -37,7 +37,7 @@ public class HelloController
 			Settings settings = Settings.builder()
 			        .put("cluster.name", "docker-cluster").build();
 			client = new PreBuiltTransportClient(settings)
-					.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("localhost"), 9300));
+					.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("elasticsearch1"), 9300));
 
 			IndexResponse response = client.prepareIndex("alias_ad_search", "ad", "ad001")
 			        .setSource(jsonBuilder()
