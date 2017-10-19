@@ -5,5 +5,5 @@
 3. http://localhost:8080/els
 
 
-# if env is not docker-compose, specify following hosts in windows hosts.
+## if env is not docker-compose, specify following hosts in windows hosts.
 127.0.0.1 elasticsearch1
